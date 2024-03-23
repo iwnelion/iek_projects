@@ -1,0 +1,22 @@
+body{
+	font-family: verdana;
+	font-size: 15px;
+	text-align: justify; 
+	background-color: #FAFAFA;
+}
+h1{
+	color: #5993F5;
+	text-align: center;
+}
+h2{
+	color: #EF7166;
+	font-size: 17px;
+	text-align: center;
+	font-style: italic;
+}
+h3{
+	color: #77B387;
+}
+blockquote{
+	color: #6E6E6E;
+}
