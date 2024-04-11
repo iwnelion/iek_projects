@@ -1,0 +1,35 @@
+body{
+	font-family: tahoma;
+	font-size: 15px;
+	text-align: justify;
+	padding: 10px;
+}
+h1{
+	color: #1D3A6B;
+	text-align: center;
+}
+p{
+	color: #7A7A7A;
+}
+img#banner{
+	border: 1px solid #1D3A6B;
+	padding: 2px;
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+p#social{
+	margin-top: 100px;
+	text-align: center;
+}
+p#btn{
+	text-align: right;
+}
+a#button{
+	text-align: right;
+	color: white;
+	border: 1px solid gray;
+	padding: 10px;
+	background-color: #4285F4;
+}
