@@ -11,11 +11,11 @@ class Wall{
 		Wall(){
 			length=5.5;
 			cout<<"creating a wall."<<endl;
-			cout<<"length= "<<length<<endl;
+			cout<<"length = "<<length<<endl;
 		}	
 };
 
 int main(){
-	Wall wall;
+	Wall wall1;
 	return 0;
 }
