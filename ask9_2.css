@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana;
+    font-size: 16px;
+}
+caption{
+    margin-bottom: 10px;
+}
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 600px;
+    background-color: #EFEFEF;
+    margin: auto;
+}
+tr, th, td{
+    border: 1px solid gray;
+}
+td, th{
+    padding: 8px;;
+}
+ol li{
+    text-align: center;
+}
+img{
+    display: block;
+    margin: auto;
+    height: 150px;
+}

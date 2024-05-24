@@ -1,0 +1,32 @@
+caption{
+    font-size: 25px;
+    font-family:'Segoe UI';
+    margin-bottom: 10px;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+
+}
+tr,th{
+    border: 1px dotted black;
+    text-align: center;
+}
+td{
+    border: 1px dotted black;
+
+}
+td, tr, th{
+    padding: 15px;
+}
+.top{
+    background-color: brown;
+    color: white;
+}
+.alla{
+    background-color: blanchedalmond;
+}

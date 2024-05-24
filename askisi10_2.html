@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΚΕΔΙΒΙΜ</title>
+    <link rel="stylesheet" href="ask10_2.css">
+</head>
+<!-- corrected to look as the second version without the table -->
+<body>
+<div class="main">
+    <h1>Φόρμα Δήλωσης Επιμορφωτικών Προγραμμάτων</h1>
+    <h2>Κέντρα Δια Βίου Μάθησης</h2>
+    <img src="kdvm.png">
+
+    <form>
+        <label for="fname"><b>Όνομα: </b></label>
+        <input type="text" name="fname" id="fname" placeholder="το όνομα σας"></br>
+
+        <label for="lname"><b>Επώνυμο: </b></label>
+        <input type="text" name="lname" id="lname" placeholder="το επώνυμο σας"></br>
+
+        <label for="bday"><b>Ημ/νία Γέννησης: </b></label>
+        <input type="date" name="bday" id="bday"></br>
+
+        <label for="afm"><b>ΑΦΜ: </b></label>
+        <input type="text" name="afm" id="afm" maxlength="9" required><label for="afm"> &nbsp; (9 ψηφία)</label>
+
+    <br/>
+        <p><b>Είδος Προγράμματος: </b>
+            <input type="radio" name="eidos" id="diazosis">
+            <label for="diazosis">Διά ζώσης</label>
+            
+            <input type="radio" name="eidos" id="apostasi">
+            <label for="apostasi">Εξ αποστάσεως</label>
+        </p>
+
+    <br/>
+        <p><b>Πρόγραμμα: </b></br>
+    <div class="progr">
+            <input type="checkbox" name="programma" id="pc">
+            <label for="pc">Βασικές γνώσεις Η/Υ</label></br>
+
+            <input type="checkbox" name="programma" id="website">
+            <label for="website">Δημιουργία Ιστοσελίδας</label></br>
+
+            <input type="checkbox" name="programma" id="db">
+            <label for="db">Σχεδιασμός Βάσεων Δεδομένων</label></br>
+        </p>
+    </div>
+        <p><b>Σχόλια: </b><br/>
+    <div class="txtar">
+            <textarea name="txt" id="txt" cols="50" rows="4" placeholder="Γράψτε εδώ τα σχόλια σας"></textarea>
+        </p>
+    
+        <input type="submit" value="ΥΠΟΒΟΛΗ">
+        <input type="reset" value="ΚΑΘΑΡΙΣΜΟΣ">
+    </div>
+    </form>
+</div>
+</body>
+</html>

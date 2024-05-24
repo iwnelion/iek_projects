@@ -1,0 +1,27 @@
+body{
+    font-family:Verdana;
+    text-align: center;
+}
+.main{
+    border: 2px solid #4A8CC9;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    width: 300px;
+    max-width: 210px;
+}
+h2{
+    font-size: 20px;
+}
+label{
+    font-size: 12px;
+}
+#usr, #mail, #pwd, #sub{
+    width: 200px;
+}
+#chk, #chk2{
+    width: 15px;
+}
+form{
+    text-align: left;
+}

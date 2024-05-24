@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα εισαγωγής στοιχείων</title>
+    <link rel="stylesheet" href="ask10_3.css">
+</head>
+<body>
+    <form>
+        <h1>Φόρμα Εισαγωγής Στοιχείων - Web Developer</h1>
+        <table>
+            <tr>
+                <th><label for="fname">Όνομα: </label></th>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+            <tr>
+                <th><label for="lname">Επώνυμο: </label></th>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <th><label for="pwd">Κωδικός: </label></th>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <th><label for="afm">ΑΦΜ: </label></th>
+                <td><input type="text" name="afm" id="afm" maxlength="10"><label for="afm"><small> (10 ψηφία)</small></label></td>
+            </tr>
+            <tr>
+                <th>Φύλο: </th>
+                <td><input type="radio" name="fulo" id="male">
+                    <label for="male">Άνδρας</label>
+                    <input type="radio" name="fulo" id="female" checked>
+                    <label for="female">Γυναίκα</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Μόρφωση: </th>
+                <td><input type="checkbox" name="edu" id="gymn">
+                    <label for="gymn">Γυμνάσιο</label><br/>
+
+                    <input type="checkbox" name="edu" id="luk" checked="checked">
+                    <label for="luk">Λύκειο</label><br/>
+
+                    <input type="checkbox" name="edu" id="tei" checked="checked">
+                    <label for="tei">ΤΕΙ</label><br/>
+
+                    <input type="checkbox" name="edu" id="aei">
+                    <label for="aei">ΑΕΙ</label><br/>
+
+                    <input type="checkbox" name="edu" id="master">
+                    <label for="master">Μεταπτυχιακό</label><br/>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="years">Προϋπηρεσία: </label></th>
+                <td><select name="years" id="years">
+                    <option value="none">ΚΑΘΟΛΟΥ</option>
+                    <option value="1yr" selected="selected">ΜΕΧΡΙ 1 ΈΤΟΣ</option>
+                    <option value="2yrs">ΜΕΧΡΙ 2 ΈΤΗ</option>
+                    <option value="less2">> 2 ΈΤΗ</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th><label for="gnoseis">Γνώσεις: </label></th>
+                <td><select name="years" id="years" size="4" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js" selected="selected">JAVASCRIPT</option>
+                    <option value="php" selected="selected">PHP</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th><label for="textarea">Άλλα στοιχεία: </label></th>
+                <td><textarea name="txt" id="txt" cols="50" rows="4" placeholder="Γράψτε εδώ ό,τι επιπλέον στοιχεία επιθυμείτε"></textarea></td>
+            </tr>
+            <br/>
+        </table>
+        <input type="submit" value="ΥΠΟΒΟΛΗ ΣΤΟΙΧΕΙΩΝ"> <input type="reset" value="ΚΑΘΑΡΙΣΜΟΣ">
+    </form>
+</body>
+</html>

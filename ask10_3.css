@@ -1,0 +1,11 @@
+body{
+    font-family: georgia;
+    font-size: 13px;
+}
+th, td{
+    padding-bottom: 20px;
+}
+th{
+    text-align: right;
+    vertical-align: top;
+}

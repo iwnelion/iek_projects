@@ -1,0 +1,17 @@
+body{
+    font-family: verdana;
+    font-size: 14px;
+    text-align: center;
+}
+table{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin: auto;
+    width: 400px;
+}
+tr, td{
+    border: 1px solid #000000;
+}
+td{
+    padding: 5px;
+}

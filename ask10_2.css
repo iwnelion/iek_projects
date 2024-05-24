@@ -1,0 +1,43 @@
+body{
+    font-family: Georgia;
+    font-size: 13px;
+}
+.main{
+    max-width: 1000px;
+    padding: 15px;
+    background-color: #FAFAFA;
+    margin: auto;
+}
+h1, h2{
+    text-align: center;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 120px;
+}
+input, textarea{
+    margin-bottom: 15px;
+}
+#pc, #website, #db{
+    margin-bottom: 0px;
+}
+label{
+    min-width: 150px;
+    display: inline-block;
+}
+.progr{
+    min-width: 150px;
+    display: block;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+#apostasi{
+    margin-left: -80px;
+}
+.txtar{
+    min-width: 150px;
+    display: block;
+    margin-left: 150px;
+    margin-top: -25px;
+}
