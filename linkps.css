@@ -1,0 +1,16 @@
+/* default state */
+a:link{
+    color: pink;
+}
+/* hovering mouse over link */
+a:hover{
+    color: green;
+}
+/* after link is visited */
+a:visited{
+    color: yellow;
+}
+/* while link is being visited */
+a:active{
+    color: coral;
+}

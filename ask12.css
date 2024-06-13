@@ -1,0 +1,55 @@
+body{
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    text-align: justify;
+    color: #333333;
+}
+.main{
+    margin: auto;
+    max-width: 1000px;
+}
+h1{
+    font-size: 22px;
+    border-bottom: 5px solid #F7941E;
+    padding: 5px;
+}
+.menu{
+    margin-top: 40px;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    color: #333333;
+}
+ul a{
+    text-decoration: none;
+    color: #333333;
+}
+li{
+    float: right;
+}
+h2{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+form{
+    padding: 15px 15px 15px 0
+}
+label, input, button{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+label{
+    font-weight: bold;
+}
+#fname, #mail, #topic{
+    width: 1000px;
+}
+button{
+    width: 100px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+}
