@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyles.css">
+    <link rel="icon" type="image/x-icon" href="codeIcon.png">
+    <title>Joana Buza - contact</title>
+</head>
+<body>
+    <header>
+        <h2><a href="main.html">joana buza</a></h2>
+        <nav>
+            <ul>
+                <li><a href="main.html">Αρχική</a></li>
+                <li><a href="about.html">Σχετικά με εμένα</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="moments.html">Στιγμές</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <h1>Επικοινωνία</h1>
+        <div class="info">
+            <form>
+                <label for="fname">Όνομα: </label>
+                <input type="text" class="txt" name="fname" placeholder="Όνομα" required><br/>
+                <label for="ln">Επώνυμο: </label>
+                <input type="text" class="txt" name="ln" placeholder="Επώνυμο" required><br/>
+                <label for="subject">Θέμα: </label>
+                <input type="text" class="txt" name="subject" placeholder="Θέμα" required><br/>
+                <label for="email">E-mail: </label>
+                <input type="email" class="txt" name="email" placeholder="your@email.com" required><br/>
+                <label for="phone">Τηλέφωνο: </label>
+                <input type="tel" class="txt" name="phone" placeholder="1234567890" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br/>
+                <label for="txt">Κείμενο: </label><br/>
+                <textarea name="txt" id="varchar" placeholder="Γράψτε το κείμενο σας" rows="5" cols="40" maxlength="50" required></textarea><br/><br/>
+                <input type="submit" class="sbmt" value="Αποστολή">
+                <input type="reset" class="sbmt reset" value="Καθαρισμός">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <small>2024 &copy; joana buza</small><br/>
+        <small>info@joanabuza.com</small>
+    </footer>
+</body>
+</html>
