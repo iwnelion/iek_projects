@@ -1,0 +1,25 @@
+/* Author: Joana Buza*/
+body{
+    background-color: #ECEFEC;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+.main{
+    background-color: #FFFFFF;
+    max-width: 1100px;
+    width: 100%;
+}
+h1{
+    font-size: 20px;
+    border: 2px solid #FEC601;
+    padding: 10px;
+    margin:20px;
+    text-align: center;
+}
+h2{
+    color: #FEC601;
+    font-size: 18px;
+}
+.end{
+    background-color: #F8F8E8;
+}
