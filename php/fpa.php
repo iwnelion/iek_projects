@@ -8,3 +8,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     echo "price wo tax: ".$at."<br>";
     echo "price with tax: ".$result."<br>";
 }
+?>
