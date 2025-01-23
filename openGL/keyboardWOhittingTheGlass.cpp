@@ -27,7 +27,7 @@ void keyboard(unsigned char key, int x, int y){
 	//printf("keyboard event detected \n");
 	if(key=='t' || y1<=5){	//up
 		y1++;
-    y2++;
+    		y2++;
 	}
 	if(key=='g'){		//down
 		y1--;
