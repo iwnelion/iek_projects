@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα παραγγελίας</title>
+    <style>
+        body{
+            background-color:rgb(252, 251, 233);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        input{
+            padding: 3px 5px;
+            width: 100px;
+        }
+        button{
+            background-color:rgb(241, 147, 85);
+            padding: 10px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Legit Computer Store</h1>
+    <h2>Φόρμα Παραγγελίας</h2>
+    
+    <form action="joanaBuzaErgasia.php" method="post">
+        <table>
+            <caption>Υλικά Παραγγελίας</caption>
+            <tr>
+                <th>Υλικό</th>
+                <th>Τιμή ανά Μονάδα (&#8364;)</th>
+                <th>Ποσότητα</th>
+            </tr>
+            <tr>
+                <td>Ποντίκι</td>
+                <td>10</td>
+                <td><input type="number" name="mouse"></td>
+            </tr>
+            <tr>
+                <td>Πληκτρολόγιο</td>
+                <td>30</td>
+                <td><input type="number" name="keyboard"></td>
+            </tr>
+            <tr>
+                <td>Ηχεία</td>
+                <td>20</td>
+                <td><input type="number" name="speakers"></td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Υπολογισμός κόστους</button><br>
+    </form>
+    <hr>
+    <footer>
+        <small>Legit Computer Store &copy;</small><br>
+        <small>email: legitstore@info.com</small>
+    </footer>
+</body>
+</html>
