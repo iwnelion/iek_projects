@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        function validateForm(){
+            let name=document.querySelector("name").value;
+            if(name===""){
+                alert("name is required");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
