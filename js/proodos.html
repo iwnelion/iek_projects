@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πρόοδος</title>
+</head>
+<body>
+    <h1>Θέμα 1</h1>
+    <label for="metoxes">Μετοχές: </label>
+    <input type="number" name="metoxes" id="metoxes"><br>
+    <label for="tokoi">Τόκοι: </label>
+    <input type="number" name="tokoi" id="tokoi"><br>
+    <label for="dikaiomata">Δικαιώματα: </label>
+    <input type="number" name="dikaiomata" id="dikaiomata"><br>
+    <button onclick="calc()">Υποβολή</button>
+    <p id="result"></p>
+
+    <h1>Θέμα 2</h1>
+    <p id="res2"></p>
+    <p id="res3"></p>
+</body>
+<script>
+    // thema 1
+    let metoxes=document.getElementById("metoxes");
+    let tokoi=document.getElementById("tokoi");
+    let dikaiomata=document.getElementById("dikaiomata");
+    let result=document.getElementById("result");
+
+    function calc(){
+        let metoxesValue=Number(metoxes.value);
+        let tokoiValue=Number(tokoi.value);
+        let dikaiomataValue=Number(dikaiomata.value);
+        let sum;
+
+        sum=metoxesValue+tokoiValue+dikaiomataValue;
+
+        let foros=(metoxesValue*0.05)+(tokoiValue*0.15)+(dikaiomataValue*0.20);
+
+        let katharo=sum-foros;
+
+        result.innerHTML+="Σύνολο: "+sum+"<br>";
+        result.innerHTML+="Φόρος: "+foros+"<br>";
+        result.innerHTML+="Καθαρό: "+katharo;
+    }
+
+    // thema 2
+    // a
+    let res2=document.getElementById("res2");
+    for(let i=1; i<=100; i++){
+        if(i%5==0){
+            res2.innerHTML+=(i+" ");
+        }
+    }
+
+    // b
+    let res3=document.getElementById("res3");
+    for(let i=100; i>=1; i--){
+        if(i%5==0){
+            res3.innerHTML+=(i+" ");
+        }
+    }
+</script>
+</html>
