@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8">
+ <title>Μάντεψε τον Αριθμό</title>
+ <style>
+ body { padding: 20px; text-align: center; }
+ button { margin: 10px; padding: 10px 20px; font-size: 18px; }
+ #result { font-size: 22px; margin-top: 20px; }
+ </style>
+</head>
+<body>
+ <h1> Μάντεψε τον Αριθμό (1 - 5)</h1>
+ <p>Πάτησε έναν αριθμό:</p>
+ <button onclick="guessNumber(1)">1</button>
+ <button onclick="guessNumber(2)">2</button>
+ <button onclick="guessNumber(3)">3</button>
+ <button onclick="guessNumber(4)">4</button>
+ <button onclick="guessNumber(5)">5</button>
+ <p id="result">Καλή επιτυχία!</p>
+ <p>Προσπάθειες: <span id="tries">0</span></p>
+ <button onclick="resetGame()"> Παίξε Ξανά</button>
+ <script>
+  let secret = Math.floor(Math.random() * 5) + 1;
+  let tries = 0;
+  function guessNumber(number) {
+  tries++;
+  document.getElementById("tries").innerText = tries;
+  let result = document.getElementById("result");
+  if (number === secret) {
+   result.innerText = ` Σωστά! Ο αριθμός ήταν ${secret}!`;
+   result.style.color = "green";
+  } else {
+   result.innerText = " Όχι, δοκίμασε ξανά!";
+   result.style.color = "red";
+   }
+ }
+ function resetGame() {
+  secret = Math.floor(Math.random() * 5) + 1;
+  tries = 0;
+  document.getElementById("tries").innerText = "0";
+  document.getElementById("result").innerText = "Ξεκινάμε από την αρχή! ";
+ }
+ </script>
+</body>
+</html>
