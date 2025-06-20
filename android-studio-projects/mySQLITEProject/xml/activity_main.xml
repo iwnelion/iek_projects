@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    tools:context="com.example.mysqliteproject.MainActivity">
+
+    <ScrollView android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- tools:ignore="MissingConstraints">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Συμπληρώστε τον Αριθμό μητρώου σας"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/cardview_dark_background"
+                />
+            <EditText
+                android:id="@+id/plain_textam_input"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="text"
+
+                android:textStyle="italic"
+                android:textColor="@color/black"/>
+
+            <!--1    question   -->
+            <TextView android:id="@+id/question_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.Σύμφωνα με την μέθοδο findViewById(R.id.X), δώστε την τιμή του Χ για να προσπελάσουμε την View με id @+id/edit_message"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textColor="#000080"
+                />
+            <EditText
+                android:id="@+id/plain_text_input"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="text"
+
+                android:textStyle="italic"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1 Μονάδα)"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/cardview_dark_background"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.Δίνεται η διευθυνση AndroidStudio εφαρμογής:myDirectory\\AndroidStudioProjects\\JustJava."
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+            <TextView android:id="@+id/question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.Σε ποιο φάκελο αποθηκεύονται οι εικονες που θα χρησιμοποιoυμε στο JustJava project:"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textColor="#000080"
+                />
+            <TextView android:id="@+id/question_1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Α.JustJava\\app\\src\\main\\res\\drawable"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Β.JustJava\\app\\src\\main\\java\\com\\example\\justJava"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Γ.JustJava\\app\\src\\main\\res\\layout"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_1d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Δ.JustJava\\app\\build\\generated"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1 Μονάδα)"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/cardview_dark_background"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/right_checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Α"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/wrong1_checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Β"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/wrong2_checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Γ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/wrong3_checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Δ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+            </RadioGroup>
+            <TextView android:id="@+id/question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.Σε ποιο φάκελο δημιουyργείται by default (δηλ από προεπιλογή) η MainActivity.java του project JustJava"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textColor="#000080"
+                />
+
+            <TextView android:id="@+id/question_2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Α.JustJava\\app\\src\\main\\java\\com\\example\\justJava"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Β.JustJava\\app\\src\\main\\res\\drawable"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Γ.JustJava\\app\\src\\main\\res\\layout"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Δ.JustJava\\app\\build\\generated"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1 Μονάδα)"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/cardview_dark_background"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/right_checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/wrong1_checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Β"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/wrong3_checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Γ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/wrong4_checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Δ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+            </RadioGroup>
+            <TextView android:id="@+id/question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.Σε ποιο φάκελο δημιοyργειται by default  (δηλ από προεπιλογή) η  activity_main.xml;"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textColor="#000080"
+                />
+            <TextView android:id="@+id/question_3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Α.JustJava\\app\\src\\main\\java\\com\\example\\justJava"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Β.JustJava\\app\\src\\main\\res\\layout"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Γ.JustJava\\app\\src\\main\\res\\drawable"
+
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Δ.JustJava\\app\\build\\generated"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1 Μονάδα)"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/cardview_dark_background"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/wrong1_checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Α"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/right_checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Β"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/wrong3_checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Γ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/wrong4_checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Δ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+            </RadioGroup>
+            <TextView android:id="@+id/question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Ποια είναι η μέθοδος που καλουμε στην MainActivity.java, όταν ένα Button με id +id/submBut και το android:onClick στοιχείο έχει την τιμή submit"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textColor="#000080"
+                />
+
+            <TextView android:id="@+id/question_4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Α.submit(EditText view){//To Do};"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Β.submit(View view){//To Do};
+"            android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Γ.submit(){//To Do};"
+
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView android:id="@+id/question_4d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Δ.submit(Button view){//To Do};"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1 Μονάδα)"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:textColor="@color/cardview_dark_background"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/wrong1_checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/right_checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/wrong2_checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Γ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/wrong3_checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Δ"
+                    android:textSize="14sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+            </RadioGroup>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="submit"
+                android:text="Υποβολή"
+                android:textColor="#000000"
+                />
+
+            <TextView android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#00C853"
+
+                ></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
