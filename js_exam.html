@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ιωάννα Μπούζα</title>
+</head>
+<body>
+    <h1>Καλάθι αγορών</h1>
+    <select name="product" id="product">
+        <option value="screen">Οθόνη - 100&euro;</option>
+        <option value="memory">Μνήμη - 30&euro;</option>
+        <option value="cpu">ΚΜΕ - 200&euro;</option>
+    </select>
+    <input type="number" name="quantity" id="quantity">
+    <br><br>
+    <button type="submit" onclick="calc()">Υπολόγισε</button><br>
+    <p id="result"></p>
+    <script>
+        function calc(){
+            let product=document.getElementById("product").value;
+            let quantity=document.getElementById("quantity").value;
+            let result=document.getElementById("result");
+            let price=0;
+            let tax=0.24;
+            let taxedPrice=0;
+            if(quantity<1 || quantity>10){
+                alert("Λανθασμένη τιμή ποσότητας. Πρέπει να είναι μεταξύ 1 και 10.");
+                return;
+            }else if(product==="screen"){
+                price=100*quantity;
+                taxedPrice=price+(price*tax);
+                result.innerHTML="Τελικό ποσό συν ΦΠΑ: "+taxedPrice+"&euro;";
+            }else if(product==="memory"){
+                price=30*quantity;
+                taxedPrice=price+(price*tax);
+                result.innerHTML="Τελικό ποσό συν ΦΠΑ: "+taxedPrice+"&euro;";
+            }else if(product==="cpu"){
+                price=200*quantity;
+                taxedPrice=price+(price*tax);
+                result.innerHTML="Τελικό ποσό συν ΦΠΑ: "+taxedPrice+"&euro;";
+            }
+        }
+    </script>
+</body>
+</html>
